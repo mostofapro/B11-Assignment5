@@ -5,8 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
   <title>Dev Board</title>
+
+  <!-- DaisyUI & Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-  
+  <!-- Header area -->
+   <header class="w-11/12 mx-auto mt-5">
+      <nav class="flex justify-between">
+        <div class="flex justify-center items-center gap-2">
+          <img src="assets/logo.png" alt="">
+          <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <div class="flex justify-center items-center gap-2">
+          <img src="assets/checkbox.png" alt="">
+          <p class="text-2xl font-bold">23</p>
+          <img id="theme-btn" class="ml-15" src="assets/theme-btn.png" alt="">
+        </div>
+      </nav>
+   </header>
+
+   <!-- Main Area -->
+    <main class="grid grid-cols">
+
+    </main>
+
+  <script src="./script/main.js"></script>
 </body>
 </html>
