@@ -4,8 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Question and Answers on DOM</title>
+    <!-- DaisyUI & Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+    <script src="https://kit.fontawesome.com/58a72d2459.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  
+  <header class="w-11/12 mx-auto mt-5 shadow-lg">
+    <nav class="flex justify-between">
+      <div class="flex justify-center items-center gap-2">
+        <img src="assets/logo.png" alt="">
+        <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+      </div>
+      <div class="flex justify-center items-center gap-2">
+        <button id="btn-btd" class="bg-blue-700 text-white rounded-xl py-2 px-5 cursor-pointer">Back to Dev</button>
+      </div>
+    </nav>
+  </header>
+
+
+ <!-- Back To Main Home Page script -->
+ <script>
+  document.getElementById('btn-btd').addEventListener("click", function(event){
+  event.preventDefault();
+  window.location.href = "./index.html"
+})
+ </script>
 </body>
 </html>
